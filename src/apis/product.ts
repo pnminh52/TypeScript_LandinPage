@@ -10,6 +10,15 @@ export const createProduct = async (product: TProduct) => {
   }
 }
 
+export const updateProduct = async (product: TProduct) => {
+  try {
+    const { data } = await instance.put(`/products/${product.id}`, product)
+    return data
+  } catch (error) {
+    console.log(error)
+  }
+}
+
 export const getProducts = async () => {
   try {
     const { data } = await instance.get(`/products`)

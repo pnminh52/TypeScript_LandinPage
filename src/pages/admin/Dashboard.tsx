@@ -1,4 +1,3 @@
-// import React from 'react'
 import { Link } from 'react-router-dom'
 import { TProduct } from '~/interfaces/Product'
 
@@ -50,19 +49,10 @@ const Dashboard = ({ products }: Props) => {
                 <td className='whitespace-nowrap px-4 py-2 text-gray-700 '>{item.description}</td>
 
                 <td className='pl-20'>
-                  <a
-                    href='#'
-                    className='inline-block rounded bg-yellow-400 px-4 py-2 text-xs font-medium text-white hover:bg-yellow-500 mr-2'
-                  >
+                  <Link to={`/admin/edit/${item.id}`} className=''>
                     Edit
-                  </a>
-
-                  <a
-                    href='#'
-                    className='inline-block rounded bg-red-600 px-4 py-2 text-xs font-medium text-white hover:bg-red-700'
-                  >
-                    Delete
-                  </a>
+                  </Link>
+                  <button className=''>Delete</button>
                 </td>
               </tr>
             ))}

@@ -22,28 +22,6 @@ const Header = () => {
                   Home{' '}
                 </NavLink>
               </li>
-
-              <li>
-                <NavLink
-                  to='/shop'
-                  className='nav-link text-gray-500 hover:text-indigo-700 transition-colors duration-300'
-                >
-                  Shop
-                </NavLink>
-              </li>
-
-              <li>
-                <NavLink to='/' className='nav-link text-gray-500 hover:text-indigo-700 transition-colors duration-300'>
-                  History
-                </NavLink>
-              </li>
-
-              <li>
-                <NavLink to='/' className='nav-link text-gray-500 hover:text-indigo-700 transition-colors duration-300'>
-                  Services
-                </NavLink>
-              </li>
-
               <li>
                 <NavLink to='/' className='nav-link text-gray-500 hover:text-indigo-700 transition-colors duration-300'>
                   Blog
