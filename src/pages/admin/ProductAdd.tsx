@@ -2,7 +2,6 @@ import { SubmitHandler, useForm } from 'react-hook-form'
 import { TProduct } from '~/interfaces/Product'
 import Joi from 'joi'
 import { joiResolver } from '@hookform/resolvers/joi'
-// import { error } from 'console'
 
 type Props = {
   onAdd: (data: TProduct) => void
@@ -11,7 +10,9 @@ type Props = {
 const schemaProduct = Joi.object({
   title: Joi.string().required().min(3).max(255),
   price: Joi.number().required().min(0),
-  description: Joi.string().allow(null, '')
+  description: Joi.string().required().min(5).max(255)
+
+  // description: Joi.string().allow(null, '')
 })
 
 const ProductAdd = ({ onAdd }: Props) => {
@@ -27,24 +28,50 @@ const ProductAdd = ({ onAdd }: Props) => {
   }
 
   return (
-    <div>
-      <h2>Add product</h2>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div className=''>
-          <label htmlFor='title'>Title</label>
-          <input type='text' className='' placeholder='title' {...register('title', { required: true })} />
-          {errors.title && <span className=''>{errors.title.message}</span>}
+    <div className='max-w-md mx-auto'>
+      <h2 className='text-2xl font-semibold mb-4'>Add Product</h2>
+      <form onSubmit={handleSubmit(onSubmit)} className='space-y-4'>
+        <div className='flex flex-col'>
+          <label htmlFor='title' className='mb-1'>
+            Title
+          </label>
+          <input
+            type='text'
+            placeholder='Title'
+            className='border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:border-blue-500'
+            {...register('title', { required: true })}
+          />
+          {errors.title && <span className='text-red-500'>{errors.title.message}</span>}
         </div>
-        <div className=''>
-          <label htmlFor='price'>Price</label>
-          <input type='number' className='' placeholder='price' {...register('price', { required: true })} />
-          {errors.price && <span className=''>{errors.price.message}</span>}
+        <div className='flex flex-col'>
+          <label htmlFor='price' className='mb-1'>
+            Price
+          </label>
+          <input
+            type='number'
+            placeholder='Price'
+            className='border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:border-blue-500'
+            {...register('price', { required: true })}
+          />
+          {errors.price && <span className='text-red-500'>{errors.price.message}</span>}
         </div>
-        <div className=''>
-          <label htmlFor='description'>Description</label>
-          <input type='text' className='' placeholder='description' {...register('description')} />
+        <div className='flex flex-col'>
+          <label htmlFor='description' className='mb-1'>
+            Description
+          </label>
+          <input
+            type='text'
+            placeholder='Description'
+            className='border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:border-blue-500'
+            {...register('description')}
+          />
+          {errors.description && <span className='text-red-500'>{errors.description.message}</span>}
         </div>
-        <button type='submit' className=''>
+
+        <button
+          type='submit'
+          className='bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600'
+        >
           Submit
         </button>
       </form>

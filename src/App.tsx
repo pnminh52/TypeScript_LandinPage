@@ -38,7 +38,8 @@ function App() {
           <Routes>
             {/* Client */}
             <Route path='/'>
-              <Route index element={<Home products={products} />} />
+              {/* <Route index element={<Home products={products} />} /> */}
+              <Route index element={<Home />} />
               <Route path='/shop/:id' element={<ProductDetail />} />
               <Route path='/shop' element={<Shop />} />
               <Route path='/login' element={<Login />} />
