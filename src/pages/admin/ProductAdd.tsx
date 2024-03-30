@@ -10,8 +10,8 @@ type Props = {
 const schemaProduct = Joi.object({
   title: Joi.string().required().min(3).max(255),
   price: Joi.number().required().min(0),
-  description: Joi.string().required().min(5).max(255)
-
+  description: Joi.string().required().min(5).max(255),
+  thumbnail: Joi.string().required().min(0)
   // description: Joi.string().allow(null, '')
 })
 
@@ -43,6 +43,19 @@ const ProductAdd = ({ onAdd }: Props) => {
           />
           {errors.title && <span className='text-red-500'>{errors.title.message}</span>}
         </div>
+        <div className='flex flex-col'>
+          <label htmlFor='thumbnail' className='mb-1'>
+            thumbnail
+          </label>
+          <input
+            type='text'
+            placeholder='thumbnail'
+            className='border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:border-blue-500'
+            {...register('thumbnail', { required: true })}
+          />
+          {errors.thumbnail && <span className='text-red-500'>{errors.thumbnail.message}</span>}
+        </div>
+
         <div className='flex flex-col'>
           <label htmlFor='price' className='mb-1'>
             Price
