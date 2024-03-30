@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import { Link } from 'react-router-dom'
 import { TProduct } from '~/interfaces/Product'
 
@@ -10,9 +10,14 @@ const Dashboard = ({ products }: Props) => {
   return (
     <div className='ml-4'>
       <div>
-        <h1 className='mb-4'>Hello, Admin</h1>
+        <div>
+          <strong className='text-xl  text-black sm:text-xl cursor-pointer'>
+            Explore the latest Apple products and accessories.
+          </strong>
+        </div>
+
         <Link
-          className='inline-block rounded mb-2 bg-green-600 px-6 py-2 text-xs font-medium text-white hover:bg-green-700'
+          className='inline-block rounded mb-2 mt-2 bg-green-600 px-6 py-2 text-xs font-medium text-white hover:bg-green-700'
           to='/admin/add'
         >
           Add new product
