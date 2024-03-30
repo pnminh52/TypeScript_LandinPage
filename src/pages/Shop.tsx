@@ -6,7 +6,7 @@ type Props = {}
 const Shop: React.FC = (props: Props) => {
   return (
     <div>
-      <h2 className='sessionTitle'></h2>
+      <h2 className=''></h2>
       <ProductList category='nam' />
     </div>
   )
