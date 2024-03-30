@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { TProduct } from '~/interfaces/Product'
+import Product from './../../components/Product'
 
 type Props = {
   products: TProduct[]
@@ -16,7 +17,7 @@ const Dashboard = ({ products }: Props) => {
         </div>
 
         <Link
-          className='inline-block rounded mb-2 mt-2 bg-green-600 px-6 py-2 text-xs font-medium text-white hover:bg-green-700'
+          className='inline-block mb-2 mt-2 bg-green-600 px-4 py-2 text-xs font-medium text-white hover:bg-green-700'
           to='/admin/add'
         >
           Add new product
@@ -49,10 +50,21 @@ const Dashboard = ({ products }: Props) => {
                 <td className='whitespace-nowrap px-4 py-2 text-gray-700 '>{item.description}</td>
 
                 <td className='pl-20'>
-                  <Link to={`/admin/edit/${item.id}`} className=''>
+                  <Link
+                    to={`/admin/edit/${item.id}`}
+                    className='border rounded-sm px-4 py-2 bg-yellow-400 text-xs font-medium text-white hover:bg-yellow-500'
+                  >
                     Edit
                   </Link>
-                  <button className=''>Delete</button>
+                  <button className='border rounded-sm px-4 py-2 bg-red-600 text-xs font-medium text-white hover:bg-red-700'>
+                    Delete
+                  </button>
+                  <Link
+                    to={`/shop/${item.id}`}
+                    className='border rounded-sm px-4 py-2 bg-indigo-500 text-xs font-medium text-white hover:bg-indigo-700'
+                  >
+                    view
+                  </Link>
                 </td>
               </tr>
             ))}
