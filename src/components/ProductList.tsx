@@ -486,7 +486,7 @@ const ProductList = (props: Props) => {
                 <span>&#9733;</span>
                 <span>&#9733;</span>
               </div>
-              <p className='text-gray-600 mb-2 text-sm '>{product.stock} products available</p>
+              <p className='text-gray-600 mb-2 text-sm '>({product.stock} products available)</p>
               {/* </div> */}
               <div className='flex '>
                 <a

@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "iPhone 9",
-      "description": "An apple mobile which is nothing like apple, git commit checked *new*",
+      "description": "An apple mobile which is nothing like apple",
       "price": 549,
       "discountPercentage": 12.96,
       "rating": 4.69,
@@ -22,7 +22,7 @@
     {
       "id": 2,
       "title": "iPhone X",
-      "description": "Smart headphone (git commit checked *new*)",
+      "description": "Smart headphone",
       "price": 899,
       "discountPercentage": 17.94,
       "rating": 4.44,
@@ -48,7 +48,9 @@
       "brand": "Samsung",
       "category": "smartphones",
       "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-compare-series9-202309?wid=396&hei=468&fmt=jpeg&qlt=90&.v=1692836321777",
-      "images": ["https://cdn.dummyjson.com/product-images/3/1.jpg"]
+      "images": [
+        "https://cdn.dummyjson.com/product-images/3/1.jpg"
+      ]
     },
     {
       "id": 4,
@@ -140,6 +142,18 @@
         "https://cdn.dummyjson.com/product-images/8/4.jpg",
         "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg"
       ]
+    },
+    {
+      "title": "sach 1",
+      "price": 1000,
+      "description": "qwqwq",
+      "id": 9
+    },
+    {
+      "title": "sp 1",
+      "price": 100,
+      "description": "desc 1",
+      "id": 10
     }
   ],
   "carts": [
