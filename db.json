@@ -1,9 +1,9 @@
 {
   "products": [
     {
-      "id": 2,
-      "title": "iPhone X",
-      "description": "Smart headphone",
+      "id": 1,
+      "title": "Product name  ",
+      "description": "Product description",
       "price": 899,
       "discountPercentage": 17.94,
       "rating": 4.44,
@@ -13,9 +13,9 @@
       "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-hero-select-202011?wid=940&hei=1112&fmt=jpeg&qlt=90&.v=1604709293000"
     },
     {
-      "id": 3,
-      "title": "Samsung Universe 9",
-      "description": "Samsung's new variant ",
+      "id": 2,
+      "title": "Product name ",
+      "description": "Product description",
       "price": 1249,
       "discountPercentage": 15.46,
       "rating": 4.09,
@@ -25,9 +25,9 @@
       "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-compare-series9-202309?wid=396&hei=468&fmt=jpeg&qlt=90&.v=1692836321777"
     },
     {
-      "id": 4,
-      "title": "OPPOF19",
-      "description": "OPPO F19 is officially announced on April 2021.",
+      "id": 3,
+      "title": "Product name ",
+      "description": "Product description",
       "price": 280,
       "discountPercentage": 17.91,
       "rating": 4.3,
@@ -37,9 +37,9 @@
       "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MUJY3_VW_PF+watch-case-45-aluminum-pink-nc-s9_VW_PF+watch-face-45-aluminum-starlight-nike_VW_PF_WF_CO?wid=750&hei=712&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1694508058746"
     },
     {
-      "id": 5,
-      "title": "Huawei P30",
-      "description": "Huawei’s re-badged P30 Pro New Edition ",
+      "id": 4,
+      "title": "Product name ",
+      "description": "Product description",
       "price": 499,
       "discountPercentage": 10.58,
       "rating": 4.09,
@@ -49,9 +49,9 @@
       "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1632861342000"
     },
     {
-      "id": 6,
-      "title": "MacBook Pro",
-      "description": "MacBook Pro 2021 with mini-LED ",
+      "id": 5,
+      "title": "Product name ",
+      "description": "Product description",
       "price": 1749,
       "discountPercentage": 11.02,
       "rating": 4.57,
@@ -67,9 +67,9 @@
       ]
     },
     {
-      "id": 7,
-      "title": "Samsung Galaxy Book",
-      "description": "Samsung Galaxy Book S (2020) ",
+      "id": 6,
+      "title": "Product name ",
+      "description": "Product description",
       "price": 1499,
       "discountPercentage": 4.15,
       "rating": 4.25,
@@ -85,9 +85,9 @@
       ]
     },
     {
-      "id": 8,
-      "title": "Microsoft Surface Laptop 4",
-      "description": "Style and speed. ",
+      "id": 7,
+      "title": "Product name ",
+      "description": "Product description",
       "price": 1499,
       "discountPercentage": 10.23,
       "rating": 4.43,
