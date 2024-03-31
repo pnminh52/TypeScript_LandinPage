@@ -1,10 +1,10 @@
 {
   "products": [
     {
-      "title": "iPhone",
+      "title": "iPhone 10",
       "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-hero-select-202011?wid=940&hei=1112&fmt=jpeg&qlt=90&.v=1604709293000",
       "price": 90,
-      "description": "Smart headphone",
+      "description": "desc test",
       "id": 1
     },
     {
@@ -130,13 +130,6 @@
         "https://cdn.dummyjson.com/product-images/8/4.jpg",
         "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg"
       ]
-    },
-    {
-      "title": "iPhone 9",
-      "price": 549,
-      "description": "An apple mobile which is nothing like apple",
-      "thumbnail": "https://th.bing.com/th/id/OIP.NU9-pviaKuVOiUs3Wy3cQwHaEo?rs=1&pid=ImgDetMain",
-      "id": 9
     }
   ],
   "carts": [
