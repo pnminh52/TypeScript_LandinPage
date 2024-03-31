@@ -72,7 +72,7 @@ const Header = () => {
           <div className='flex items-center gap-4'>
             <div className='sm:flex sm:gap-2'>
               <a
-                className='block rounded-md bg-indigo-500 px-5 py-2.5 text-sm font-medium text-white transition'
+                className='block rounded-md bg-indigo-700 px-5 py-2.5 text-sm font-medium text-white transition'
                 href='#'
               >
                 Login
