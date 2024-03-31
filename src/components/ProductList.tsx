@@ -410,6 +410,7 @@ const ProductList = (props: Props) => {
               Explore the latest Apple products and accessories.
             </strong>
           </div>
+
           <div className='mt-4'>
             <div className='sm:hidden '>
               <label htmlFor='Tab' className='sr-only'>

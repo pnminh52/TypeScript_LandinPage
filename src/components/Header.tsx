@@ -22,15 +22,11 @@ const Header = () => {
                   Home{' '}
                 </NavLink>
               </li>
-              <li>
-                <NavLink to='/' className='nav-link text-gray-500 hover:text-indigo-700 transition-colors duration-300'>
-                  Blog
-                </NavLink>
-              </li>
+
               <li>
                 <NavLink
                   to='/Admin'
-                  className='nav-link text-gray-500 hover:text-indigo-700 transition-colors duration-300'
+                  className='nav-link mr-9 text-gray-500 hover:text-indigo-700 transition-colors duration-300'
                 >
                   Admin
                 </NavLink>

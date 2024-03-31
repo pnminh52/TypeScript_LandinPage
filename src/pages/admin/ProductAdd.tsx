@@ -53,6 +53,7 @@ const ProductAdd = ({ onAdd }: Props) => {
             className='border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:border-blue-500'
             {...register('thumbnail', { required: true })}
           />
+
           {errors.thumbnail && <span className='text-red-500'>{errors.thumbnail.message}</span>}
         </div>
 
