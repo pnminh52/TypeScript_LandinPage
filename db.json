@@ -1,10 +1,10 @@
 {
   "products": [
     {
-      "title": "iPhone 10",
+      "title": "iPhone 101212",
       "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-hero-select-202011?wid=940&hei=1112&fmt=jpeg&qlt=90&.v=1604709293000",
-      "price": 90,
-      "description": "desc test",
+      "price": 9012121,
+      "description": "desc test 2",
       "id": 1
     },
     {
@@ -17,13 +17,7 @@
       "stock": 34,
       "brand": "Apple",
       "category": "smartphones",
-      "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-hero-select-202011?wid=940&hei=1112&fmt=jpeg&qlt=90&.v=1604709293000",
-      "images": [
-        "https://cdn.dummyjson.com/product-images/2/1.jpg",
-        "https://cdn.dummyjson.com/product-images/2/2.jpg",
-        "https://cdn.dummyjson.com/product-images/2/3.jpg",
-        "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
-      ]
+      "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-hero-select-202011?wid=940&hei=1112&fmt=jpeg&qlt=90&.v=1604709293000"
     },
     {
       "id": 3,
@@ -35,10 +29,7 @@
       "stock": 36,
       "brand": "Samsung",
       "category": "smartphones",
-      "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-compare-series9-202309?wid=396&hei=468&fmt=jpeg&qlt=90&.v=1692836321777",
-      "images": [
-        "https://cdn.dummyjson.com/product-images/3/1.jpg"
-      ]
+      "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-compare-series9-202309?wid=396&hei=468&fmt=jpeg&qlt=90&.v=1692836321777"
     },
     {
       "id": 4,
@@ -50,14 +41,7 @@
       "stock": 123,
       "brand": "OPPO",
       "category": "smartphones",
-      "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MUJY3_VW_PF+watch-case-45-aluminum-pink-nc-s9_VW_PF+watch-face-45-aluminum-starlight-nike_VW_PF_WF_CO?wid=750&hei=712&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1694508058746",
-      "images": [
-        "https://cdn.dummyjson.com/product-images/4/1.jpg",
-        "https://cdn.dummyjson.com/product-images/4/2.jpg",
-        "https://cdn.dummyjson.com/product-images/4/3.jpg",
-        "https://cdn.dummyjson.com/product-images/4/4.jpg",
-        "https://cdn.dummyjson.com/product-images/4/thumbnail.jpg"
-      ]
+      "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MUJY3_VW_PF+watch-case-45-aluminum-pink-nc-s9_VW_PF+watch-face-45-aluminum-starlight-nike_VW_PF_WF_CO?wid=750&hei=712&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1694508058746"
     },
     {
       "id": 5,
@@ -69,12 +53,7 @@
       "stock": 32,
       "brand": "Huawei",
       "category": "smartphones",
-      "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1632861342000",
-      "images": [
-        "https://cdn.dummyjson.com/product-images/5/1.jpg",
-        "https://cdn.dummyjson.com/product-images/5/2.jpg",
-        "https://cdn.dummyjson.com/product-images/5/3.jpg"
-      ]
+      "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1632861342000"
     },
     {
       "id": 6,
