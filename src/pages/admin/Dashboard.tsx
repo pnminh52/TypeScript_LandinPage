@@ -1,3 +1,4 @@
+// pulltest
 import { Link } from 'react-router-dom'
 import { TProduct } from '~/interfaces/Product'
 // import Product from './../../components/Product'
@@ -57,31 +58,31 @@ const Dashboard = ({ products }: Props) => {
           </div>
         </div>
       </div>
-      <div className='mx-auto max-w-screen-xl  sm:px-4 sm:py-2 lg:px-4 border rounded-lg '>
-        <table className='w-full divide-y-2 divide-gray-200 bg-white text-sm'>
+      <div className='mx-auto max-w-screen-xl  sm:px-8   border rounded-lg '>
+        <table className='w-full divide-y-2 divide-gray-200 bg-white text-sm '>
           <thead>
-            <tr className=' '>
-              <th className='whitespace-nowrap px-2 py-2 font-medium text-gray-700'>#</th>
-              <th className='whitespace-nowrap px-2 py-2 font-medium text-gray-700'>Title</th>
-              <th className='whitespace-nowrap px-2 py-2 font-medium text-gray-700'>Price</th>
-              <th className='whitespace-nowrap px-2 py-2 font-medium text-gray-700'>Thumbnail</th>
-              <th className='whitespace-nowrap px-2 py-2 font-medium text-gray-700'>Description</th>
-              <th className='whitespace-nowrap px-2 py-2 font-medium text-gray-700 '>Action</th>
+            <tr>
+              <th className=' px-2 py-2 font-medium text-gray-700'>#</th>
+              <th className=' px-2 py-2 font-medium text-gray-700'>Title</th>
+              <th className=' px-2 py-2 font-medium text-gray-700'>Price</th>
+              <th className=' px-2 py-2 font-medium text-gray-700'>Thumbnail</th>
+              <th className=' px-2 py-2 font-medium text-gray-700'>Description</th>
+              <th className=' px-2 py-2 font-medium text-gray-700 '>Action</th>
             </tr>
           </thead>
 
-          <tbody className='divide-y divide-gray-200 '>
+          <tbody>
             {products.map((item) => (
               <tr key={item.id}>
-                <td className='whitespace-nowrap px-4 py-4 font-medium text-gray-900 '>{item.id}</td>
-                <td className='whitespace-nowrap px-4 py-4 text-gray-700 '>{item.title}</td>
-                <td className='whitespace-nowrap px-4 py-4 text-gray-700 '>{item.price}$</td>
-                <td className='whitespace-nowrap px-4 py-4 text-gray-700'>
-                  <img width={60} src={item.thumbnail} alt={item.title} />
+                <td className=' px-8 py-2 ml-12  text-gray-700 '>{item.id}</td>
+                <td className=' px-8 py-2 text-gray-700 '>{item.title}</td>
+                <td className=' px-8 py-2 text-gray-700 '>{item.price}$</td>
+                <td className=' px-8 py-2 text-gray-700'>
+                  <img width={120} src={item.thumbnail} alt={item.title} />
                 </td>
-                <td className='whitespace-nowrap px-4 py-4 text-gray-700 '>{item.description}</td>
+                <td className=' px-8 py-2 text-gray-700 '>{item.description}</td>
 
-                <td className='pl-20'>
+                <td className='flex ml-20 sm:py-14 lg:px-8'>
                   <Link
                     to={`/admin/edit/${item.id}`}
                     className='border rounded-lg px-4 py-2 bg-yellow-400 text-xs font-medium text-white hover:bg-yellow-500 hover:shadow-lg'
