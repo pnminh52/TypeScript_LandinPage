@@ -14,13 +14,16 @@ type Props = {
 const schemaProduct = Joi.object({
   title: Joi.string().required().min(3).max(255),
   price: Joi.number().required().min(0),
+  description: Joi.string().allow(null, ''),
   thumbnail: Joi.string().required().min(0),
-  description: Joi.string().allow(null, '')
+  discountPercentage: Joi.number().required().min(10).max(70),
+  stock: Joi.number().required().min(10)
 })
 
 const ProductEdit = ({ onEdit }: Props) => {
   const { id } = useParams()
   const [product, setProduct] = useState<TProduct | null>(null)
+
   const {
     register,
     handleSubmit,
@@ -41,68 +44,86 @@ const ProductEdit = ({ onEdit }: Props) => {
 
   return (
     <div className='max-w-md mx-auto'>
-      <form onSubmit={handleSubmit(onSubmit)} className='bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4'>
-        <h2 className='text-xl font-bold mb-4'>Edit Product</h2>
-        <div className='mb-4'>
-          <label htmlFor='title' className='block text-gray-700 text-sm font-bold mb-2'>
+      <h2 className='text-2xl font-semibold mb-4'>Update Product</h2>
+      <form onSubmit={handleSubmit(onSubmit)} className='space-y-4'>
+        <div className='flex flex-col'>
+          <label htmlFor='title' className='mb-1'>
             Title
           </label>
           <input
             type='text'
-            id='title'
-            className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
             placeholder='Title'
-            defaultValue={product?.title}
+            className='border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:border-blue-500'
             {...register('title', { required: true })}
           />
           {errors.title && <span className='text-red-500'>{errors.title.message}</span>}
         </div>
-        {/* images */}
-        <div className='mb-4'>
-          <label htmlFor='title' className='block text-gray-700 text-sm font-bold mb-2'>
+        <div className='flex flex-col'>
+          <label htmlFor='thumbnail' className='mb-1'>
             thumbnail
           </label>
           <input
             type='text'
-            id='images'
-            className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
-            placeholder='Images URL'
-            defaultValue={product?.thumbnail}
+            placeholder='thumbnail'
+            className='border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:border-blue-500'
             {...register('thumbnail', { required: true })}
           />
+
           {errors.thumbnail && <span className='text-red-500'>{errors.thumbnail.message}</span>}
         </div>
-        {/* images */}
-        <div className='mb-4'>
-          <label htmlFor='price' className='block text-gray-700 text-sm font-bold mb-2'>
+
+        <div className='flex flex-col'>
+          <label htmlFor='price' className='mb-1'>
             Price
           </label>
           <input
             type='number'
-            id='price'
-            className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
             placeholder='Price'
-            defaultValue={product?.price as number}
+            className='border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:border-blue-500'
             {...register('price', { required: true })}
           />
           {errors.price && <span className='text-red-500'>{errors.price.message}</span>}
         </div>
-        <div className='mb-4'>
-          <label htmlFor='description' className='block text-gray-700 text-sm font-bold mb-2'>
+        <div className='flex flex-col'>
+          <label htmlFor='price' className='mb-1'>
+            Discount
+          </label>
+          <input
+            type='number'
+            placeholder='Discount'
+            className='border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:border-blue-500'
+            {...register('discountPercentage', { required: true })}
+          />
+          {errors.discountPercentage && <span className='text-red-500'>{errors.discountPercentage.message}</span>}
+        </div>
+        <div className='flex flex-col'>
+          <label htmlFor='price' className='mb-1'>
+            Stock
+          </label>
+          <input
+            type='number'
+            placeholder='Stock'
+            className='border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:border-blue-500'
+            {...register('stock', { required: true })}
+          />
+          {errors.stock && <span className='text-red-500'>{errors.stock.message}</span>}
+        </div>
+        <div className='flex flex-col'>
+          <label htmlFor='description' className='mb-1'>
             Description
           </label>
           <input
             type='text'
-            id='description'
-            className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
             placeholder='Description'
-            defaultValue={product?.description}
+            className='border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:border-blue-500'
             {...register('description')}
           />
+          {errors.description && <span className='text-red-500'>{errors.description.message}</span>}
         </div>
+
         <button
           type='submit'
-          className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full'
+          className='bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600'
         >
           Submit
         </button>

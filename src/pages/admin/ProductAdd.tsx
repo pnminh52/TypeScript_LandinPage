@@ -10,9 +10,10 @@ type Props = {
 const schemaProduct = Joi.object({
   title: Joi.string().required().min(3).max(255),
   price: Joi.number().required().min(0),
-  description: Joi.string().required().min(5).max(255),
-  thumbnail: Joi.string().required().min(0)
-  // description: Joi.string().allow(null, '')
+  description: Joi.string().allow(null, ''),
+  thumbnail: Joi.string().required().min(0),
+  discountPercentage: Joi.number().required().min(10).max(70),
+  stock: Joi.number().required().min(10)
 })
 
 const ProductAdd = ({ onAdd }: Props) => {
@@ -68,6 +69,30 @@ const ProductAdd = ({ onAdd }: Props) => {
             {...register('price', { required: true })}
           />
           {errors.price && <span className='text-red-500'>{errors.price.message}</span>}
+        </div>
+        <div className='flex flex-col'>
+          <label htmlFor='price' className='mb-1'>
+            Discount
+          </label>
+          <input
+            type='number'
+            placeholder='Discount'
+            className='border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:border-blue-500'
+            {...register('discountPercentage', { required: true })}
+          />
+          {errors.discountPercentage && <span className='text-red-500'>{errors.discountPercentage.message}</span>}
+        </div>
+        <div className='flex flex-col'>
+          <label htmlFor='price' className='mb-1'>
+            Stock
+          </label>
+          <input
+            type='number'
+            placeholder='Stock'
+            className='border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:border-blue-500'
+            {...register('stock', { required: true })}
+          />
+          {errors.stock && <span className='text-red-500'>{errors.stock.message}</span>}
         </div>
         <div className='flex flex-col'>
           <label htmlFor='description' className='mb-1'>
