@@ -1,15 +1,6 @@
 {
   "products": [
     {
-      "title": "sach 1",
-      "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-hero-select-202011?wid=940&hei=1112&fmt=jpeg&qlt=90&.v=1604709293000",
-      "price": 10000000,
-      "discountPercentage": 10,
-      "stock": 111,
-      "description": "update success",
-      "id": 1
-    },
-    {
       "id": 2,
       "title": "iPhone X",
       "description": "Smart headphone",
@@ -111,24 +102,6 @@
         "https://cdn.dummyjson.com/product-images/8/4.jpg",
         "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg"
       ]
-    },
-    {
-      "title": "sach 1",
-      "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-hero-select-202011?wid=940&hei=1112&fmt=jpeg&qlt=90&.v=1604709293000",
-      "price": 10000000,
-      "discountPercentage": 10,
-      "stock": 111,
-      "description": "update success 2",
-      "id": 9
-    },
-    {
-      "title": "sach 1",
-      "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-hero-select-202011?wid=940&hei=1112&fmt=jpeg&qlt=90&.v=1604709293000",
-      "price": 10000000,
-      "discountPercentage": 10,
-      "stock": 111,
-      "description": "update success",
-      "id": 10
     }
   ],
   "carts": [

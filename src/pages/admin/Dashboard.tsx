@@ -1,11 +1,20 @@
 import { Link } from 'react-router-dom'
 import { TProduct } from '~/interfaces/Product'
 // import Product from './../../components/Product'
+// import { deleteProduct } from '~/apis/product'
 
+// type Props = {
+//   products: TProduct[]
+//   onDelete: (id: string) => void
+// }
+// const Dashboard = ({ products, onDelete }: Props) => {
+//   const handleDelete = (id: string) => {
+//     deleteProduct(id)
+//     onDelete(id)
+//   }
 type Props = {
   products: TProduct[]
 }
-
 const Dashboard = ({ products }: Props) => {
   return (
     <div className='ml-4 '>
@@ -79,7 +88,10 @@ const Dashboard = ({ products }: Props) => {
                   >
                     Edit
                   </Link>
-                  <button className='border rounded-lg px-4 py-2 bg-red-600 text-xs font-medium text-white hover:bg-red-700 hover:shadow-lg'>
+                  <button
+                    // onClick={() => handleDelete(String(item.id))}
+                    className='border rounded-lg px-4 py-2 bg-red-600 text-xs font-medium text-white hover:bg-red-700 hover:shadow-lg'
+                  >
                     Delete
                   </button>
                   <Link

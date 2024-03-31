@@ -13,6 +13,7 @@ import Register from './pages/Register'
 import Dashboard from './pages/admin/Dashboard'
 import ProductAdd from './pages/admin/ProductAdd'
 // import { createProduct, getProduct, getProducts, updateProduct } from './apis/product'
+// import { createProduct, getProducts, updateProduct, deleteProduct } from './apis/product'
 import { createProduct, getProducts, updateProduct } from './apis/product'
 import ProductEdit from './pages/admin/ProductEdit'
 
@@ -41,6 +42,9 @@ function App() {
       navigate('/admin')
     })()
   }
+  // const handleDeleteProduct = (id: string) => {
+  //   setProducts(products.filter((product) => product.id !== id))
+  // }
   return (
     <>
       <div className='app'>
@@ -59,7 +63,12 @@ function App() {
             <Route path='/admin'>
               <Route index element={<Dashboard products={products} />} />
               <Route path='/admin/add' element={<ProductAdd onAdd={handleAddProduct} />} />
-              <Route path='/admin/edit/:id' element={<ProductEdit onEdit={handleEditProduct} />} />
+              <Route
+                path='/admin/edit/:id'
+                element={<ProductEdit onEdit={handleEditProduct} />}
+                // path='/admin/edit/:id'
+                // element={<ProductEdit onEdit={handleEditProduct} onDelete={handleDeleteProduct} />}
+              />
             </Route>
             <Route path='*' element={<Notfound />} />
           </Routes>
