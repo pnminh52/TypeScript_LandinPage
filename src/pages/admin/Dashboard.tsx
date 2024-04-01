@@ -13,12 +13,14 @@ import { TProduct } from '~/interfaces/Product'
 //     deleteProduct(id)
 //     onDelete(id)
 //   }
+
 type Props = {
   products: TProduct[]
 }
 const Dashboard = ({ products }: Props) => {
   return (
     <div className='ml-4 '>
+      
       <div className='mx-auto max-w-screen-xl px-2 py-8 sm:px-6 sm:py-12 lg:px-8  bg-white'>
         <div className='sm:flex sm:items-center sm:justify-between'>
           <div className='text-center sm:text-left'>
@@ -85,21 +87,21 @@ const Dashboard = ({ products }: Props) => {
                 <td className='flex ml-20 sm:py-14 lg:px-8'>
                   <Link
                     to={`/admin/edit/${item.id}`}
-                    className='border rounded-lg px-4 py-2 bg-yellow-400 text-xs font-medium text-white hover:bg-yellow-500 hover:shadow-lg'
+                    className='rounded-l-full  px-4 py-2 opacity-80 bg-amber-100 text-xs font-medium text-amber-700 transition duration-300 hover:opacity-100 hover:bg-amber-200 hover:text-amber-800'
                   >
                     Edit
                   </Link>
                   <button
                     // onClick={() => handleDelete(String(item.id))}
-                    className='border rounded-lg px-4 py-2 bg-red-600 text-xs font-medium text-white hover:bg-red-700 hover:shadow-lg'
+                    className='   px-4 py-2 opacity-80 bg-red-100 text-xs font-medium text-red-700 transition duration-300 hover:opacity-100 hover:bg-red-200 hover:text-red-800'
                   >
                     Delete
                   </button>
                   <Link
                     to={`/shop/${item.id}`}
-                    className='border rounded-lg px-4 py-2 bg-green-500 text-xs font-medium text-white hover:bg-green-700 hover:shadow-lg'
+                    className='rounded-r-full  px-4 py-2 opacity-80 bg-emerald-100 text-xs font-medium text-emerald-700 transition duration-300 hover:opacity-100 hover:bg-emerald-200 hover:text-emerald-800'
                   >
-                    view
+                    View
                   </Link>
                 </td>
               </tr>

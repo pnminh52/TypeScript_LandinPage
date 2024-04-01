@@ -1,5 +1,5 @@
 import { TProduct } from '~/interfaces/Product'
-
+// import React from 'react'
 type Props = { product: TProduct }
 const Product = (props: Props) => {
   return (

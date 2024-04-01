@@ -51,7 +51,6 @@ function App() {
         <Header />
         <main className='container' id='main'>
           <Routes>
-            {/* Client */}
             <Route path='/'>
               {/* <Route index element={<Home products={products} />} /> */}
               <Route index element={<Home />} />
@@ -59,7 +58,6 @@ function App() {
               <Route path='/login' element={<Login />} />
               <Route path='/register' element={<Register />} />
             </Route>
-            {/* Admin */}
             <Route path='/admin'>
               <Route index element={<Dashboard products={products} />} />
               <Route path='/admin/add' element={<ProductAdd onAdd={handleAddProduct} />} />
