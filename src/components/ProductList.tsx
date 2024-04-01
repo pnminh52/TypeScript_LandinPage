@@ -20,6 +20,7 @@ const ProductList = (props: Props) => {
     }
     getAllProducts()
   }, [])
+
   return (
     <div className='flex border rounded-lg shadow-lg'>
       <div className='w-1/5 '>
@@ -463,8 +464,32 @@ const ProductList = (props: Props) => {
           {products.map((product) => (
             <div
               key={product.id}
-              className='bg-white  shadow-sm border p-4  rounded-lg mt-4 mb-2 hover:shadow-lg hover:border-indigo-700'
+              className='bg-white shadow-sm border p-4 rounded-lg mt-4 mb-2 hover:shadow-lg hover:border-indigo-700 transition duration-300 ease-in-out'
             >
+              <svg
+                className='border rounded-full h-7 w-7 text-red-500 transition-colors cursor-pointer hover:text-red-600'
+                width='20'
+                height='20'
+                viewBox='0 0 24 24'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                {/* Border */}
+                <path
+                  fill='none'
+                  stroke='currentColor'
+                  strokeWidth='2'
+                  d='M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7'
+                />
+                {/* Fill */}
+                <path
+                  fill='currentColor'
+                  d='M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7'
+                  className='text-white transition-colors hover:fill-current hover:text-red-600 '
+                />
+              </svg>
+
               <Link to={`/shop/${product.id}`}>
                 <img className='object-contain h-40 w-full' src={product.thumbnail} alt={product.title} />
               </Link>

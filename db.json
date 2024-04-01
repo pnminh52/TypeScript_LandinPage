@@ -1,16 +1,13 @@
 {
   "products": [
     {
-      "id": 1,
-      "title": "Product name  ",
-      "description": "Product description",
-      "price": 899,
-      "discountPercentage": 17.94,
-      "rating": 4.44,
-      "stock": 34,
-      "brand": "Apple",
-      "category": "smartphones",
-      "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-hero-select-202011?wid=940&hei=1112&fmt=jpeg&qlt=90&.v=1604709293000"
+      "title": "iPhone 9",
+      "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-hero-select-202011?wid=940&hei=1112&fmt=jpeg&qlt=90&.v=1604709293000",
+      "price": 10000000,
+      "discountPercentage": 10,
+      "stock": 111,
+      "description": "update success 2",
+      "id": 1
     },
     {
       "id": 2,

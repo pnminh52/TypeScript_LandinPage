@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div>
       <h2 className=''></h2>
-      <ProductList category='nam' />
+      <ProductList category='product' />
     </div>
   )
 }

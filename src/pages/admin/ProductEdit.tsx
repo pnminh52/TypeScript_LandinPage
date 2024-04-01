@@ -41,7 +41,7 @@ const ProductEdit = ({ onEdit }: Props) => {
       setProduct(data)
     })()
   }, [])
-
+  //git check commit
   return (
     <div className='max-w-md mx-auto'>
       <h2 className='text-2xl font-semibold mb-4'>Update Product</h2>
