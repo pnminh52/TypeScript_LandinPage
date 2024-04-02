@@ -26,14 +26,14 @@ const Header = () => {
 
               <li>
                 <NavLink
-                  to='/Admin'
+                  to='/'
                   className='nav-link mr-9 text-gray-500 hover:text-indigo-700 transition-colors duration-300'
                 >
-                  Admin
+                  Shop
                 </NavLink>
               </li>
               <li>
-                <div className='relative'>
+                <div className='ml-32 relative'>
                   <label htmlFor='Search' className='sr-only'>
                     Search
                   </label>
@@ -42,10 +42,10 @@ const Header = () => {
                     type='text'
                     id='Search'
                     placeholder='Search for...'
-                    className='w-full md:w-80 rounded-full border-purple-400 border-2 py-2.5 px-3 pr-10 shadow-sm sm:text-sm focus:outline-none focus:border-purple-600 focus:shadow-lg'
+                    className='w-full md:w-80 rounded-full border-purple-400 border-2 py-2.5 px-3  shadow-sm sm:text-sm focus:outline-none focus:border-purple-600 focus:shadow-lg'
                   />
 
-                  <span className='absolute inset-y-0 right-0 flex items-center pr-3'>
+                  <span className='absolute inset-y-0 right-0 flex items-center pr-3 '>
                     <button type='button' className='text-gray-600 hover:text-gray-700'>
                       <span className='sr-only'>Search</span>
 
