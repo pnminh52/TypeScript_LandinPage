@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
 import instance from '~/apis'
 import { User } from '~/interfaces/User'
+// import Login from './Login'
 
 const userSchema = Joi.object({
   email: Joi.string().email({ tlds: false }).required(),
@@ -23,7 +24,7 @@ const Register = () => {
     ;(async () => {
       const { data } = await instance.post('/register', user)
       if (data.user) {
-        const isConfirm = confirm('Dang ky thanh cong, sang trang dang nhap')
+        const isConfirm = confirm('Register successfully!')
         if (isConfirm) {
           navigate('/login')
         }
@@ -32,35 +33,76 @@ const Register = () => {
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <h2 className='text-center'>Register</h2>
-        <div className=' mx-auto  px-4 py-4 sm:px-80 lg:px-80  '>
-          <label htmlFor='email'>Email</label>
-          <input
-            type='email'
-            className='w-full shadow-md rounded-lg p-4 pe-12 text-sm border border-gray-200 '
-            placeholder='email'
-            {...register('email', { required: true })}
-          />
-          {errors.email && <div className='text-red-500'>{errors.email.message}</div>}
-        </div>
-        <div className=' mx-auto  px-4 py-2 sm:px-80 lg:px-80 '>
-          <label htmlFor='password'>Password</label>
-          <input
-            type='password'
-            className='w-full shadow-md rounded-lg  p-4 pe-12 text-sm border border-gray-200 '
-            placeholder='password'
-            {...register('password', { required: true, minLength: 6 })}
-          />
-          {errors.password && <div className='text-red-500'>{errors.password.message}</div>}
-        </div>
-        <div className='text-center'>
-          <button type='submit' className='border border-gray-200 mt-8 px-4 py-2 rounded-lg '>
-            Submit
-          </button>
-        </div>
-      </form>
+    <div className='mx-auto max-w-screen-xl px-64 py-4 sm:px-6 lg:px-8 '>
+      <div className='mx-auto max-w-sm mt-6 border rounded-lg border-indigo-600 '>
+        <form onSubmit={handleSubmit(onSubmit)} className='mb-0  space-y-4 rounded-lg p-2 shadow-lg sm:p-16 lg:p-4'>
+          <h1 className='text-center text-xl font-md text-indigo-600 '>Get started today</h1>
+
+          <p className='mx-auto mt-2 max-w-md font-thin text-center text-gray-500'>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati sunt dolores deleniti inventore quaerat
+            mollitia?
+          </p>
+          <p className='text-center text-md font-md text-indigo-600'>Create your personal account</p>
+
+          <div>
+            <div className='mb-2 font-thin text-indigo-600'>
+              <label htmlFor='password'>Email</label>
+            </div>
+
+            <div className='relative'>
+              <input
+                type='email'
+                className='w-full rounded-lg border border-gray-600 p-4 pe-12 text-sm shadow-sm'
+                placeholder='Enter email'
+                {...register('email', { required: true })}
+              />
+              {errors.email && <div className='text-red-500'>{errors.email.message}</div>}
+            </div>
+          </div>
+
+          <div>
+            <div className='mb-2 font-thin text-indigo-600'>
+              <label htmlFor='password'>Password</label>
+            </div>
+
+            <div className='relative'>
+              <input
+                type='password'
+                className='w-full rounded-lg border border-gray-600 p-4 pe-12 text-sm shadow-sm'
+                placeholder='Enter password'
+                {...register('password', { required: true, minLength: 6 })}
+              />
+              {errors.password && <div className='text-red-500'>{errors.password.message}</div>}
+            </div>
+          </div>
+          <label htmlFor='Option1' className='flex cursor-pointer items-start gap-4'>
+            <div className='flex items-center'>
+              &#8203;
+              <input
+                type='checkbox'
+                className='hover:cursor-pointer mr-2 size-3 rounded border border-gray-300'
+                id='Option1'
+              />
+              <strong className='font-thin text-sm text-gray-400 mr-2'> I agree to these </strong>
+              <strong className='font-thin text-sm text-indigo-600'>Terms and User Policies</strong>
+            </div>
+          </label>
+          <div>
+            <button
+              type='submit'
+              className='block w-full rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white'
+            >
+              Register
+            </button>
+          </div>
+          <div className='flex justify-center'>
+            <p className='text-sm mr-2 text-gray-500 ml-2'>Already have an account?</p>
+            <a href='/login' className='text-sm text-indigo-600'>
+              Login
+            </a>
+          </div>
+        </form>
+      </div>
     </div>
   )
 }

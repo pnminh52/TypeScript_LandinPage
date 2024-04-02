@@ -1,28 +1,7 @@
 {
   "products": [
     {
-      "title": "情報技術新入生の旅日記 ...",
-      "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-hero-select-202011?wid=940&hei=1112&fmt=jpeg&qlt=90&.v=1604709293000",
-      "price": 1000,
-      "discountPercentage": 10,
-      "stock": 12,
-      "description": "desc 3",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "title": "Product name ",
-      "description": "Product description",
-      "price": 1249,
-      "discountPercentage": 15.46,
-      "rating": 4.09,
-      "stock": 36,
-      "brand": "Samsung",
-      "category": "smartphones",
-      "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-compare-series9-202309?wid=396&hei=468&fmt=jpeg&qlt=90&.v=1692836321777"
-    },
-    {
-      "id": 3,
+      "id": 1,
       "title": "Product name ",
       "description": "Product description",
       "price": 280,
@@ -34,7 +13,7 @@
       "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MUJY3_VW_PF+watch-case-45-aluminum-pink-nc-s9_VW_PF+watch-face-45-aluminum-starlight-nike_VW_PF_WF_CO?wid=750&hei=712&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1694508058746"
     },
     {
-      "id": 4,
+      "id": 2,
       "title": "Product name ",
       "description": "Product description",
       "price": 499,
@@ -46,7 +25,7 @@
       "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1632861342000"
     },
     {
-      "id": 5,
+      "id": 3,
       "title": "Product name ",
       "description": "Product description",
       "price": 1749,
@@ -64,7 +43,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 4,
       "title": "Product name ",
       "description": "Product description",
       "price": 1499,
@@ -94,14 +73,9 @@
       "id": 2
     },
     {
-      "email": "phamsuzumoe52@gmail.com",
-      "password": "$2a$10$rHq2ZfrcWAK84II.PyM0SeKlMIm.5OnMvecHliJMFub0l6/5snNEa",
+      "email": "testaccount@gmail.com",
+      "password": "$2a$10$U9NncYzCaR1eIMx/jvDkQ.YG5/dYh1H8rWq3YLccho7zSTSnb6bfC",
       "id": 3
-    },
-    {
-      "email": "testmail@gmail.com",
-      "password": "$2a$10$BJN7W79sBA/UikTDyuO7I.zUe2bHzdZpagtTBU7HM1WBG6/IIKKzC",
-      "id": 4
     }
   ]
 }

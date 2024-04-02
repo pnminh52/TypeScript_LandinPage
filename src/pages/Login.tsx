@@ -1,104 +1,108 @@
-// import React from "react";
+import { joiResolver } from '@hookform/resolvers/joi'
+import Joi from 'joi'
+import { useForm } from 'react-hook-form'
+import { useNavigate } from 'react-router-dom'
+import instance from '~/apis'
+import { User } from '~/interfaces/User'
+// import Register from './Register'
 
-import Register from './Register'
+const userSchema = Joi.object({
+  email: Joi.string().email({ tlds: false }).required(),
+  password: Joi.string().required().min(6)
+})
+const Login = () => {
+  const navigate = useNavigate()
+  const {
+    register,
+    handleSubmit,
+    formState: { errors }
+  } = useForm<User>({
+    resolver: joiResolver(userSchema)
+  })
+  const onSubmit = (user: User) => {
+    console.log(user)
+    ;(async () => {
+      const { data } = await instance.post('/login', user)
+      if (data.user) {
+        localStorage.setItem('accessToken', data.accessToken)
+        const isConfirm = confirm('Login successfully!')
+        if (isConfirm) {
+          navigate('/admin')
+        }
+      }
+    })()
+  }
 
-type Props = {}
-
-const Login = (props: Props) => {
   return (
-    <div className='mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8'>
-      <div className='mx-auto max-w-lg'>
-        <h1 className='text-center text-2xl font-bold text-indigo-600 sm:text-3xl'>Get started today</h1>
+    <div className='mx-auto max-w-screen-xl px-64 py-4 sm:px-6 lg:px-8  '>
+      <div className='mx-auto max-w-sm mt-6 border rounded-lg border-indigo-600'>
+        <form onSubmit={handleSubmit(onSubmit)} className='mb-0  space-y-4 rounded-lg p-2 shadow-lg sm:p-16 lg:p-4'>
+          <h1 className='text-center text-xl font-md text-indigo-600 '>Get started today</h1>
 
-        <p className='mx-auto mt-4 max-w-md text-center text-gray-500'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati sunt dolores deleniti inventore quaerat
-          mollitia?
-        </p>
-
-        <form action='#' className='mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8'>
-          <p className='text-center text-lg font-medium'>Sign in to your account</p>
+          <p className='mx-auto mt-2 max-w-md font-thin text-center text-gray-500'>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati sunt dolores deleniti inventore quaerat
+            mollitia?
+          </p>
+          <p className='text-center text-md font-md text-indigo-600'>Login to your personal account</p>
 
           <div>
-            <label htmlFor='email' className='sr-only'>
-              Email
-            </label>
+            <div className='mb-2 font-thin text-indigo-600'>
+              <label htmlFor='password'>Email</label>
+            </div>
 
             <div className='relative'>
               <input
                 type='email'
-                className='w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm'
+                className='w-full rounded-lg border border-gray-600 p-4 pe-12 text-sm shadow-sm'
                 placeholder='Enter email'
+                {...register('email', { required: true })}
               />
-
-              <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  className='size-4 text-gray-400'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  stroke='currentColor'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth='2'
-                    d='M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207'
-                  />
-                </svg>
-              </span>
+              {errors.email && <div className='text-red-500'>{errors.email.message}</div>}
             </div>
           </div>
 
           <div>
-            <label htmlFor='password' className='sr-only'>
-              Password
-            </label>
+            <div className='mb-2 font-thin text-indigo-600'>
+              <label htmlFor='password'>Password</label>
+            </div>
 
             <div className='relative'>
               <input
                 type='password'
-                className='w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm'
+                className='w-full rounded-lg border border-gray-600 p-4 pe-12 text-sm shadow-sm'
                 placeholder='Enter password'
+                {...register('password', { required: true, minLength: 6 })}
               />
-
-              <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  className='size-4 text-gray-400'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  stroke='currentColor'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth='2'
-                    d='M15 12a3 3 0 11-6 0 3 3 0 016 0z'
-                  />
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth='2'
-                    d='M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z'
-                  />
-                </svg>
-              </span>
+              {errors.password && <div className='text-red-500'>{errors.password.message}</div>}
             </div>
           </div>
+          <label htmlFor='Option1' className='flex cursor-pointer items-start gap-4'>
+            <div className='flex items-center'>
+              &#8203;
+              <input
+                type='checkbox'
+                className='hover:cursor-pointer mr-2 size-3 rounded border border-gray-300'
+                id='Option1'
+              />
+              <strong className='font-thin text-sm text-gray-400 mr-2'> I agree to these </strong>
+              <strong className='font-thin text-sm text-indigo-600'>Terms and User Policies</strong>
+            </div>
+          </label>
+          <div>
+            <button
+              type='submit'
+              className='block w-full rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white'
+            >
+              Login
+            </button>
+          </div>
 
-          <button
-            type='submit'
-            className='block w-full rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white'
-          >
-            Sign in
-          </button>
-
-          <p className='text-center text-sm text-gray-500'>
-            No account?
-            <a className='underline' href='/register'>
-              Sign up
+          <div className='flex justify-center'>
+            <p className='text-sm mr-2 text-gray-500 ml-2'>Don't have an account yet?</p>
+            <a href='/register' className='text-sm text-indigo-600'>
+              Register
             </a>
-          </p>
+          </div>
         </form>
       </div>
     </div>
