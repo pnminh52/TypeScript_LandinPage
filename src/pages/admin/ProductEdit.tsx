@@ -31,17 +31,16 @@ const ProductEdit = ({ onEdit }: Props) => {
   } = useForm<TProduct>({
     resolver: joiResolver(schemaProduct)
   })
-  const onSubmit: SubmitHandler<TProduct> = (data) => {
-    onEdit({ ...data, id })
-  }
-
   useEffect(() => {
     ;(async () => {
       const data = await getProduct(`${id}`)
       setProduct(data)
     })()
   }, [])
-  //git check commit
+  const onSubmit: SubmitHandler<TProduct> = (data) => {
+    onEdit({ ...data, id })
+  }
+
   return (
     <div className='max-w-md mx-auto'>
       <h2 className='text-2xl font-semibold mb-4'>Update Product</h2>

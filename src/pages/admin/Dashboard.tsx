@@ -1,26 +1,13 @@
-// pulltes-3
 import { Link } from 'react-router-dom'
 import { TProduct } from '~/interfaces/Product'
-// import Product from './../../components/Product'
-// import { deleteProduct } from '~/apis/product'
-
-// type Props = {
-//   products: TProduct[]
-//   onDelete: (id: string) => void
-// }
-// const Dashboard = ({ products, onDelete }: Props) => {
-//   const handleDelete = (id: string) => {
-//     deleteProduct(id)
-//     onDelete(id)
-//   }
 
 type Props = {
   products: TProduct[]
+  onDel: (id: number) => void
 }
-const Dashboard = ({ products }: Props) => {
+const Dashboard = ({ products, onDel }: Props) => {
   return (
     <div className='ml-4 '>
-      
       <div className='mx-auto max-w-screen-xl px-2 py-8 sm:px-6 sm:py-12 lg:px-8  bg-white'>
         <div className='sm:flex sm:items-center sm:justify-between'>
           <div className='text-center sm:text-left'>
@@ -52,7 +39,7 @@ const Dashboard = ({ products }: Props) => {
               </svg>
             </button>
             <Link
-              className='block rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring'
+              className='block rounded-lg bg-indigo-300 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-400 focus:outline-none focus:ring'
               to='/admin/add'
             >
               Add new product
@@ -92,7 +79,7 @@ const Dashboard = ({ products }: Props) => {
                     Edit
                   </Link>
                   <button
-                    // onClick={() => handleDelete(String(item.id))}
+                    onClick={() => onDel(Number(item.id))}
                     className='   px-4 py-2 opacity-80 bg-red-100 text-xs font-medium text-red-700 transition duration-300 hover:opacity-100 hover:bg-red-200 hover:text-red-800'
                   >
                     Delete
