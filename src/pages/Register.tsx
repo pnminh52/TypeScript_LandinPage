@@ -33,8 +33,8 @@ const Register = () => {
   }
 
   return (
-    <div className='mx-auto max-w-screen-xl px-64 py-4 sm:px-6 lg:px-8 '>
-      <div className='mx-auto max-w-sm mt-6 border rounded-lg border-indigo-600 '>
+    <div className='mx-auto max-w-screen-xl px-64 py-2 sm:px-6 lg:px-8'>
+      <div className='mx-auto max-w-sm mt-6 border rounded-lg border-indigo-600 bg-white '>
         <form onSubmit={handleSubmit(onSubmit)} className='mb-0  space-y-4 rounded-lg p-2 shadow-lg sm:p-16 lg:p-4'>
           <h1 className='text-center text-xl font-md text-indigo-600 '>Get started today</h1>
 
@@ -52,7 +52,7 @@ const Register = () => {
             <div className='relative'>
               <input
                 type='email'
-                className='w-full rounded-lg border border-gray-600 p-4 pe-12 text-sm shadow-sm'
+                className='w-full rounded-lg border border-gray-600 p-4 pe-12 text-sm shadow-sm hover:opacity-70'
                 placeholder='Enter email'
                 {...register('email', { required: true })}
               />
@@ -68,7 +68,7 @@ const Register = () => {
             <div className='relative'>
               <input
                 type='password'
-                className='w-full rounded-lg border border-gray-600 p-4 pe-12 text-sm shadow-sm'
+                className='w-full rounded-lg border border-gray-600 p-4 pe-12 text-sm shadow-sm hover:opacity-70'
                 placeholder='Enter password'
                 {...register('password', { required: true, minLength: 6 })}
               />

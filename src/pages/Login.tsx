@@ -53,7 +53,7 @@ const Login = () => {
             <div className='relative'>
               <input
                 type='email'
-                className='w-full rounded-lg border border-gray-600 p-4 pe-12 text-sm shadow-sm'
+                className='w-full rounded-lg border border-gray-600 p-4 pe-12 text-sm shadow-sm hover:opacity-70'
                 placeholder='Enter email'
                 {...register('email', { required: true })}
               />
@@ -69,7 +69,7 @@ const Login = () => {
             <div className='relative'>
               <input
                 type='password'
-                className='w-full rounded-lg border border-gray-600 p-4 pe-12 text-sm shadow-sm'
+                className='w-full rounded-lg border border-gray-600 p-4 pe-12 text-sm shadow-sm hover:opacity-70'
                 placeholder='Enter password'
                 {...register('password', { required: true, minLength: 6 })}
               />

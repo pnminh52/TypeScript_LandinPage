@@ -1,7 +1,5 @@
-// git commit checked *new*
 import { NavLink } from 'react-router-dom'
 import Register from './../pages/Register'
-
 const Header = () => {
   return (
     <header className='bg-white'>
@@ -30,6 +28,14 @@ const Header = () => {
                   className='nav-link mr-9 text-gray-500 hover:text-indigo-700 transition-colors duration-300'
                 >
                   Shop
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to='/'
+                  className='nav-link mr-9 text-gray-500 hover:text-indigo-700 transition-colors duration-300'
+                >
+                  Blog
                 </NavLink>
               </li>
               <li>
