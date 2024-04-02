@@ -23,7 +23,6 @@ const schemaProduct = Joi.object({
 const ProductEdit = ({ onEdit }: Props) => {
   const { id } = useParams()
   const [product, setProduct] = useState<TProduct | null>(null)
-
   const {
     register,
     handleSubmit,
@@ -31,15 +30,16 @@ const ProductEdit = ({ onEdit }: Props) => {
   } = useForm<TProduct>({
     resolver: joiResolver(schemaProduct)
   })
+  const onSubmit: SubmitHandler<TProduct> = (data) => {
+    onEdit({ ...data, id })
+  }
+
   useEffect(() => {
     ;(async () => {
       const data = await getProduct(`${id}`)
       setProduct(data)
     })()
   }, [])
-  const onSubmit: SubmitHandler<TProduct> = (data) => {
-    onEdit({ ...data, id })
-  }
 
   return (
     <div className='max-w-md mx-auto'>

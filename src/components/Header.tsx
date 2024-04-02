@@ -1,5 +1,6 @@
 // git commit checked *new*
 import { NavLink } from 'react-router-dom'
+import Register from './../pages/Register'
 
 const Header = () => {
   return (
@@ -73,14 +74,14 @@ const Header = () => {
             <div className='sm:flex sm:gap-2'>
               <a
                 className='block rounded-md bg-indigo-700 px-5 py-2.5 text-sm font-medium text-white transition'
-                href='#'
+                href='/login'
               >
                 Login
               </a>
 
               <a
                 className='hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-indigo-500 transition hover:text-indigo-600/75 sm:block'
-                href='#'
+                href='/Register'
               >
                 Register
               </a>

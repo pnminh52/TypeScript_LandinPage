@@ -1,12 +1,12 @@
 {
   "products": [
     {
-      "title": "iPhone 9",
+      "title": "情報技術新入生の旅日記 ...",
       "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-hero-select-202011?wid=940&hei=1112&fmt=jpeg&qlt=90&.v=1604709293000",
-      "price": 10000000,
+      "price": 1000,
       "discountPercentage": 10,
-      "stock": 111,
-      "description": "update success 2",
+      "stock": 12,
+      "description": "desc 3",
       "id": 1
     },
     {
@@ -82,6 +82,26 @@
       ]
     }
   ],
-
-  "users": []
+  "users": [
+    {
+      "email": "phamnhatminhsuzumoe52@gmail.com",
+      "password": "$2a$10$qRmTUilKO2/uBoDR6FjmF.j6URWgzEe.orm/3/clHPpuI6Ak/PhP.",
+      "id": 1
+    },
+    {
+      "email": "11@gmail.com",
+      "password": "$2a$10$PvbwTM4cvcbAe9bUDFWh6OjXiPPDpnS/iSa3aybUE.BqK3AdA.ynG",
+      "id": 2
+    },
+    {
+      "email": "phamsuzumoe52@gmail.com",
+      "password": "$2a$10$rHq2ZfrcWAK84II.PyM0SeKlMIm.5OnMvecHliJMFub0l6/5snNEa",
+      "id": 3
+    },
+    {
+      "email": "testmail@gmail.com",
+      "password": "$2a$10$BJN7W79sBA/UikTDyuO7I.zUe2bHzdZpagtTBU7HM1WBG6/IIKKzC",
+      "id": 4
+    }
+  ]
 }
