@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import Register from './../pages/Register'
+// import Register from './../pages/Register'
 const Header = () => {
   return (
     <header className='bg-white'>
@@ -21,25 +21,39 @@ const Header = () => {
                   Home{' '}
                 </NavLink>
               </li>
-
               <li>
-                <NavLink
-                  to='/'
-                  className='nav-link mr-9 text-gray-500 hover:text-indigo-700 transition-colors duration-300'
-                >
+                <NavLink to='/' className='nav-link text-gray-500 hover:text-indigo-700 transition-colors duration-300'>
                   Shop
                 </NavLink>
               </li>
               <li>
-                <NavLink
-                  to='/'
-                  className='nav-link mr-9 text-gray-500 hover:text-indigo-700 transition-colors duration-300'
-                >
+                <NavLink to='/' className='nav-link text-gray-500 hover:text-indigo-700 transition-colors duration-300'>
                   Blog
                 </NavLink>
               </li>
               <li>
-                <div className='ml-32 relative'>
+                <NavLink to='/' className='nav-link text-gray-500 hover:text-indigo-700 transition-colors duration-300'>
+                  About
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to='/' className='nav-link text-gray-500 hover:text-indigo-700 transition-colors duration-300'>
+                  Support
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to='/' className='nav-link text-gray-500 hover:text-indigo-700 transition-colors duration-300'>
+                  Accessory
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to='/' className='nav-link text-gray-500 hover:text-indigo-700 transition-colors duration-300'>
+                  Business
+                </NavLink>
+              </li>
+
+              <li>
+                <div className=' relative'>
                   <label htmlFor='Search' className='sr-only'>
                     Search
                   </label>
