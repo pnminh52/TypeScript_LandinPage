@@ -66,16 +66,6 @@
       "email": "phamnhatminhsuzumoe52@gmail.com",
       "password": "$2a$10$qRmTUilKO2/uBoDR6FjmF.j6URWgzEe.orm/3/clHPpuI6Ak/PhP.",
       "id": 1
-    },
-    {
-      "email": "11@gmail.com",
-      "password": "$2a$10$PvbwTM4cvcbAe9bUDFWh6OjXiPPDpnS/iSa3aybUE.BqK3AdA.ynG",
-      "id": 2
-    },
-    {
-      "email": "testaccount@gmail.com",
-      "password": "$2a$10$U9NncYzCaR1eIMx/jvDkQ.YG5/dYh1H8rWq3YLccho7zSTSnb6bfC",
-      "id": 3
     }
   ]
 }
