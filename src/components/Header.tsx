@@ -52,7 +52,7 @@ const Header = () => {
                     type='text'
                     id='Search'
                     placeholder='Search for...'
-                    className='w-full md:w-80 rounded-full border-purple-400 border-2 py-2.5 px-3  shadow-sm sm:text-sm focus:outline-none focus:border-purple-600 focus:shadow-lg'
+                    className='w-full md:w-80 rounded-full border-purple-400 border-2 py-2.5 px-3  shadow-sm sm:text-sm focus:outline-none focus:border-purple-600 focus:shadow-lg transition duration-300 ease-in-out'
                   />
 
                   <span className='absolute inset-y-0 right-0 flex items-center pr-3 '>

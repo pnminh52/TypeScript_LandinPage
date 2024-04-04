@@ -464,7 +464,7 @@ const ProductList = (props: Props) => {
           {products.map((product) => (
             <div
               key={product.id}
-              className='bg-white shadow-sm border p-4 rounded-lg mt-4 mb-2 hover:shadow-lg hover:border-indigo-700 transition duration-300 ease-in-out'
+              className='bg-white shadow-sm border p-4 rounded-lg mt-4 mb-2 hover:shadow-xl hover:border-indigo-700 transition duration-300 ease-in-out'
             >
               <svg
                 className='border rounded-full h-7 w-7 text-red-500 transition-colors cursor-pointer hover:text-red-600'
@@ -496,7 +496,7 @@ const ProductList = (props: Props) => {
               <Link to={`/shop/${product.id}`}>
                 <h2 className='text-lg font-semibold text-indigo-700'>{product.title}</h2>
               </Link>
-              {/* <p className='text-gray-700 '>{product.description}</p> */}
+
               <div className='flex flex-col md:flex-row items-start md:items-center'>
                 <p className='text-red-500  md:mr-2 text-lg font-bold'>{product.price}$</p>
                 <span className='whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-sm text-green-400 font-bold'>
@@ -516,18 +516,20 @@ const ProductList = (props: Props) => {
               {/* </div> */}
               <div className='flex '>
                 <a
-                  className='group relative inline-block text-sm font-medium  text-indigo-600 focus:outline-none focus:ring active:text-indigo-500'
+                  className='group relative inline-block text-sm  font-medium  text-indigo-600 focus:outline-none focus:ring active:text-indigo-500'
                   href='#'
                 >
-                  <span className='absolute inset-0 translate-x-0 translate-y-0 bg-indigo-600 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5'></span>
-                  <span className='relative block border border-current bg-white px-5 py-1'> Buy </span>
+                  <span className='absolute inset-0 translate-x-0 rounded-md translate-y-0 bg-indigo-600 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5'></span>
+                  <span className='relative block border rounded-md border-current bg-white px-5 py-1'> Buy </span>
                 </a>
                 <a
                   className='group relative inline-block ml-2 text-sm font-medium text-indigo-600 focus:outline-none focus:ring active:text-indigo-500'
                   href='#'
                 >
-                  <span className='absolute inset-0 translate-x-0 translate-y-0 bg-indigo-600 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5'></span>
-                  <span className='relative block border border-current bg-white  px-6 py-1'> Add to cart </span>
+                  <span className='absolute inset-0 translate-x-0 rounded-md translate-y-0 bg-indigo-600 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5'></span>
+                  <span className='relative block border  rounded-md border-current bg-white  px-6 py-1'>
+                    Add to cart
+                  </span>
                 </a>
               </div>
             </div>
