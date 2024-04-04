@@ -39,7 +39,7 @@ const Dashboard = ({ products, onDel }: Props) => {
               </svg>
             </button>
             <Link
-              className='block rounded-lg bg-indigo-300 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-400 focus:outline-none focus:ring'
+              className='block rounded-lg bg-indigo-300 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-400 duration-300 focus:outline-none focus:ring'
               to='/admin/add'
             >
               Add new product

@@ -430,27 +430,27 @@ const ProductList = (props: Props) => {
                 <nav className='-mb-px flex gap-6' aria-label='Tabs'>
                   <a
                     href='#'
-                    className='shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm  text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                    className='shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm transition duration-300 text-gray-500 hover:border-indigo-600 hover:text-gray-700'
                   >
                     Settings
                   </a>
 
                   <a
                     href='#'
-                    className='shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm  text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                    className='shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm transition duration-300 text-gray-500 hover:border-indigo-600 hover:text-gray-700'
                   >
                     Messages
                   </a>
 
                   <a
                     href='#'
-                    className='shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm  text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                    className='shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm transition duration-300 text-gray-500 hover:border-indigo-600 hover:text-gray-700'
                   >
                     Archive
                   </a>
                   <a
                     href='#'
-                    className='shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm  text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                    className='shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm transition duration-300 text-gray-500 hover:border-indigo-600 hover:text-gray-700'
                   >
                     Archive
                   </a>
