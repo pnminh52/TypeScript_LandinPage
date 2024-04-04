@@ -36,13 +36,3 @@ export const getProduct = async (id: string) => {
     console.log(error)
   }
 }
-
-// export const deleteProduct = async (id: string) => {
-//   try {
-//     const { data } = await instance.delete(`/products/${id}`)
-//     return data
-//   } catch (error) {
-//     console.log(error)
-//     throw error
-//   }
-// }

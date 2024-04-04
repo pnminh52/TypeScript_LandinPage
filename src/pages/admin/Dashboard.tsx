@@ -56,6 +56,8 @@ const Dashboard = ({ products, onDel }: Props) => {
               <th className=' px-2 py-2 font-medium text-gray-700'>Price</th>
               <th className=' px-2 py-2 font-medium text-gray-700'>Thumbnail</th>
               <th className=' px-2 py-2 font-medium text-gray-700'>Description</th>
+              <th className=' px-2 py-2 font-medium text-gray-700'>Stock</th>
+              <th className=' px-2 py-2 font-medium text-gray-700 '>Discount</th>
               <th className=' px-2 py-2 font-medium text-gray-700 '>Action</th>
             </tr>
           </thead>
@@ -70,8 +72,9 @@ const Dashboard = ({ products, onDel }: Props) => {
                   <img width={120} src={item.thumbnail} alt={item.title} />
                 </td>
                 <td className=' px-8 py-2 text-gray-700 '>{item.description}</td>
-
-                <td className='flex ml-20 sm:py-14 lg:px-8'>
+                <td className=' px-8 py-2 text-gray-700 '>{item.stock}</td>
+                <td className=' px-8 py-2 text-gray-700 '>{item.discountPercentage}</td>
+                <td className='flex ml-8 sm:py-14 lg:px-8'>
                   <Link
                     to={`/admin/edit/${item.id}`}
                     className='rounded-l-full  px-4 py-2 opacity-80 bg-amber-100 text-xs font-medium text-amber-700 transition duration-300 hover:opacity-100 hover:bg-amber-200 hover:text-amber-800'

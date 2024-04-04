@@ -4,7 +4,6 @@ import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
 import instance from '~/apis'
 import { User } from '~/interfaces/User'
-// import Login from './Login'
 
 const userSchema = Joi.object({
   email: Joi.string().email({ tlds: false }).required(),
@@ -45,7 +44,7 @@ const Register = () => {
           <p className='text-center text-md font-md text-indigo-600'>Create your personal account</p>
 
           <div>
-            <div className='mb-2 font-thin text-indigo-600'>
+            <div className='mb-2 font-thin text-indigo-700'>
               <label htmlFor='password'>Email</label>
             </div>
 
