@@ -66,6 +66,11 @@
       "email": "phamnhatminhsuzumoe52@gmail.com",
       "password": "$2a$10$qRmTUilKO2/uBoDR6FjmF.j6URWgzEe.orm/3/clHPpuI6Ak/PhP.",
       "id": 1
+    },
+    {
+      "email": "ts@gmail.com",
+      "password": "$2a$10$cf5YlgeIEDxaEA3myU83hOZWwILwnA0sphEF4LHqmAjJwhHrHjyF2",
+      "id": 2
     }
   ]
 }

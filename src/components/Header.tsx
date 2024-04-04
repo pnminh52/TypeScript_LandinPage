@@ -41,16 +41,6 @@ const Header = () => {
                   Support
                 </NavLink>
               </li>
-              <li>
-                <NavLink to='/' className='nav-link text-gray-500 hover:text-indigo-700 transition-colors duration-300'>
-                  Accessory
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to='/' className='nav-link text-gray-500 hover:text-indigo-700 transition-colors duration-300'>
-                  Business
-                </NavLink>
-              </li>
 
               <li>
                 <div className=' relative'>
@@ -93,14 +83,14 @@ const Header = () => {
           <div className='flex items-center gap-4'>
             <div className='sm:flex sm:gap-2'>
               <a
-                className='block rounded-md bg-indigo-700 px-5 py-2.5 text-sm font-medium text-white transition'
+                className='block rounded-md bg-indigo-700 hover:shadow-lg  duration-300 ease-in-out px-5 py-2.5 text-sm font-medium text-white transition'
                 href='/login'
               >
                 Login
               </a>
 
               <a
-                className='hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-indigo-500 transition hover:text-indigo-600/75 sm:block'
+                className='hidden rounded-md bg-gray-100 hover:shadow-lg duration-300 ease-in-out px-5 py-2.5 text-sm font-medium text-indigo-500 transition hover:text-indigo-600/75 sm:block'
                 href='/Register'
               >
                 Register
