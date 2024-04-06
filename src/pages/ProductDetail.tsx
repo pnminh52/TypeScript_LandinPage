@@ -48,6 +48,7 @@ const ProductDetail = () => {
             <p className='text-lg mt-2 font-bold text-red-500'>Total: {product?.price}$</p>
             <p className='mt-2'>{product?.description}</p>
            <p>Commit test</p>
+           <p>Commit test</p>
           </div>
         </div>
       </div>
