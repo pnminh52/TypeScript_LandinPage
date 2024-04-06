@@ -76,6 +76,11 @@
       "email": "ts2@gmail.com",
       "password": "$2a$10$rSafNNwl7bNedZckFjND4eLzIjbdNSztF2HYRF.B0ULuzBdwlfgmy",
       "id": 3
+    },
+    {
+      "email": "ts5@gmail.com",
+      "password": "$2a$10$Sz2EBu61Ljkt27YS8IauR.XqdLgA7Ue4ARFpDNN2IqPNPeidWYT56",
+      "id": 4
     }
   ]
 }

@@ -47,22 +47,7 @@ const ProductDetail = () => {
             <h2 className='text-xl font-semibold '>{product?.title}</h2>
             <p className='text-lg mt-2 font-bold text-red-500'>Total: {product?.price}$</p>
             <p className='mt-2'>{product?.description}</p>
-            <div className='flex mt-2'>
-              <a
-                className='group relative inline-block text-sm font-medium mr-2 text-indigo-600 focus:outline-none focus:ring active:text-indigo-500'
-                href='#'
-              >
-                <span className='absolute inset-0 translate-x-0 translate-y-0 bg-indigo-600 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5'></span>
-                <span className='relative block border border-current bg-white px-5 py-1'> Buy </span>
-              </a>
-              <a
-                className='group relative inline-block text-sm font-medium  text-indigo-600 focus:outline-none focus:ring active:text-indigo-500'
-                href='#'
-              >
-                <span className='absolute inset-0 translate-x-0 translate-y-0 bg-indigo-600 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5'></span>
-                <span className='relative block border border-current bg-white px-5 py-1'> Add to Cart </span>
-              </a>
-            </div>
+           
           </div>
         </div>
       </div>
