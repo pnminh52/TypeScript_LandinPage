@@ -47,8 +47,7 @@ const ProductDetail = () => {
             <h2 className='text-xl font-semibold '>{product?.title}</h2>
             <p className='text-lg mt-2 font-bold text-red-500'>Total: {product?.price}$</p>
             <p className='mt-2'>{product?.description}</p>
-           <p>New Commit test</p>
-           
+
           </div>
         </div>
       </div>
