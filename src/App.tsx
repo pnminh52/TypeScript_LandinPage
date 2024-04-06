@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { Route, Routes, useNavigate } from 'react-router-dom'
-// import { Route, Routes, useNavigate, useParams } from 'react-router-dom'
 import instance from './apis'
 import Footer from './components/Footer'
 import Header from './components/Header'
