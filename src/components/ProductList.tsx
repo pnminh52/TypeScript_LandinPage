@@ -23,19 +23,19 @@ const ProductList = (props: Props) => {
 
   return (
     <div className='flex border rounded-lg shadow-lg'>
-      <div className='w-1/5 '>
+      <div className='w-1/5  '>
         <div className='flex h-full flex-col justify-between border-r bg-white'>
           <div className='px-4 py-6'>
-            <ul className='mt-2 space-y-1 mb-2'>
+            <ul className='mt-2 space-y-1 mb-2 '>
               <li>
-                <a href='#' className='block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700'>
+                <a href='#' className='  block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700'>
                   General
                 </a>
               </li>
 
               <li>
                 <details className='group [&_summary::-webkit-details-marker]:hidden'>
-                  <summary className='flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700'>
+                  <summary className='flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition duration-300 ease-in-out'>
                     <span className='text-sm font-medium'> Teams </span>
 
                     <span className='shrink-0 transition duration-300 group-open:-rotate-180'>
@@ -58,7 +58,7 @@ const ProductList = (props: Props) => {
                     <li>
                       <a
                         href='#'
-                        className='block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700'
+                        className='block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition duration-300 ease-in-out'
                       >
                         Banned Users
                       </a>
@@ -67,7 +67,7 @@ const ProductList = (props: Props) => {
                     <li>
                       <a
                         href='#'
-                        className='block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700'
+                        className='block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition duration-300 ease-in-out'
                       >
                         Calendar
                       </a>
@@ -77,7 +77,7 @@ const ProductList = (props: Props) => {
               </li>
               <li>
                 <details className='group [&_summary::-webkit-details-marker]:hidden'>
-                  <summary className='flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700'>
+                  <summary className='flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition duration-300 ease-in-out'>
                     <span className='text-sm font-medium'> Teams </span>
 
                     <span className='shrink-0 transition duration-300 group-open:-rotate-180'>
@@ -100,7 +100,7 @@ const ProductList = (props: Props) => {
                     <li>
                       <a
                         href='#'
-                        className='block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700'
+                        className='block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition duration-300 ease-in-out'
                       >
                         Banned Users
                       </a>
@@ -109,7 +109,7 @@ const ProductList = (props: Props) => {
                     <li>
                       <a
                         href='#'
-                        className='block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700'
+                        className='block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition duration-300 ease-in-out'
                       >
                         Calendar
                       </a>
@@ -119,7 +119,7 @@ const ProductList = (props: Props) => {
               </li>
               <li>
                 <details className='group [&_summary::-webkit-details-marker]:hidden'>
-                  <summary className='flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700'>
+                  <summary className='flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition duration-300 ease-in-out'>
                     <span className='text-sm font-medium'> Teams </span>
 
                     <span className='shrink-0 transition duration-300 group-open:-rotate-180'>
@@ -149,7 +149,7 @@ const ProductList = (props: Props) => {
                         </div>
 
                         <div>
-                          <strong className='text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700'>
+                          <strong className='text-sm font-medium text-gray-500 hover:text-gray-700'>
                             {' '}
                             John Clapton{' '}
                           </strong>
@@ -163,7 +163,7 @@ const ProductList = (props: Props) => {
                         </div>
 
                         <div>
-                          <strong className='text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700'>
+                        <strong className='text-sm font-medium text-gray-500 hover:text-gray-700'>
                             {' '}
                             Peter Mayer{' '}
                           </strong>
@@ -177,7 +177,7 @@ const ProductList = (props: Props) => {
                         </div>
 
                         <div>
-                          <strong className='text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700'>
+                        <strong className='text-sm font-medium text-gray-500 hover:text-gray-700'>
                             {' '}
                             Eric King{' '}
                           </strong>
@@ -190,7 +190,7 @@ const ProductList = (props: Props) => {
                         </div>
 
                         <div>
-                          <strong className='text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700'>
+                        <strong className='text-sm font-medium text-gray-500 hover:text-gray-700'>
                             {' '}
                             Eric King{' '}
                           </strong>
@@ -203,7 +203,7 @@ const ProductList = (props: Props) => {
                         </div>
 
                         <div>
-                          <strong className='text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700'>
+                        <strong className='text-sm font-medium text-gray-500 hover:text-gray-700'>
                             {' '}
                             Eric King{' '}
                           </strong>
@@ -216,7 +216,7 @@ const ProductList = (props: Props) => {
                         </div>
 
                         <div>
-                          <strong className='text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700'>
+                        <strong className='text-sm font-medium text-gray-500 hover:text-gray-700'>
                             {' '}
                             Eric King{' '}
                           </strong>
@@ -293,7 +293,7 @@ const ProductList = (props: Props) => {
                     <summary className='flex cursor-pointer items-center justify-between gap-2 bg-white p-4 text-gray-500 transition'>
                       <span className='text-sm font-medium'> Availability </span>
 
-                      <span className='transition group-open:-rotate-180'>
+                      <span className='transition group-open:-rotate-180 '>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
                           fill='none'
@@ -321,7 +321,7 @@ const ProductList = (props: Props) => {
                           <label htmlFor='FilterInStock' className='inline-flex items-center gap-2'>
                             <input type='checkbox' id='FilterInStock' className='size-3 rounded border-gray-300' />
 
-                            <span className='text-sm font-medium text-gray-500'> In Stock (5+) </span>
+                            <span className='text-sm font-medium text-gray-500 hover:cursor-pointer'> In Stock (5+) </span>
                           </label>
                         </li>
 
@@ -329,76 +329,22 @@ const ProductList = (props: Props) => {
                           <label htmlFor='FilterPreOrder' className='inline-flex items-center gap-2'>
                             <input type='checkbox' id='FilterPreOrder' className='size-3 rounded border-gray-300' />
 
-                            <span className='text-sm font-medium text-gray-500'> Pre Order (3+) </span>
+                            <span className='text-sm font-medium text-gray-500 hover:cursor-pointer'> Pre Order (3+) </span>
                           </label>
                         </li>
 
-                        <li>
-                          <label htmlFor='FilterOutOfStock' className='inline-flex items-center gap-2'>
-                            <input type='checkbox' id='FilterOutOfStock' className='size-3 rounded border-gray-300' />
-
-                            <span className='text-sm font-medium text-gray-500'> Out of Stock (10+) </span>
-                          </label>
-                        </li>
+                       
                       </ul>
                     </div>
                   </details>
 
-                  <details className='overflow-hidden rounded-lg border border-gray-300 [&_summary::-webkit-details-marker]:hidden'>
-                    <summary className='flex cursor-pointer items-center justify-between gap-2 bg-white p-4 text-gray-500 transition'>
-                      <span className='text-sm font-medium'> Price </span>
-
-                      <span className='transition group-open:-rotate-180'>
-                        <svg
-                          xmlns='http://www.w3.org/2000/svg'
-                          fill='none'
-                          viewBox='0 0 24 24'
-                          strokeWidth='1.5'
-                          stroke='currentColor'
-                          className='h-4 w-4'
-                        >
-                          <path strokeLinecap='round' strokeLinejoin='round' d='M19.5 8.25l-7.5 7.5-7.5-7.5' />
-                        </svg>
-                      </span>
-                    </summary>
-
-                    <div className='border-t border-gray-200 bg-white'>
-                      <header className='flex items-center justify-between p-4'>
-                        <span className='text-sm text-gray-500'> The highest price is $600 </span>
-
-                        <button type='button' className='text-sm text-gray-500 underline underline-offset-4'>
-                          Reset
-                        </button>
-                      </header>
-
-                      <div className='border-t border-gray-200 p-4'>
-                        <div className='flex justify-between gap-4'>
-                          <label htmlFor='FilterPriceFrom' className='flex items-center gap-2'>
-                            <span className='text-sm text-gray-500'>$</span>
-
-                            <input
-                              type='number'
-                              id='FilterPriceFrom'
-                              placeholder='From'
-                              className='w-full rounded-md border-gray-200 shadow-sm sm:text-sm'
-                            />
-                          </label>
-
-                          <label htmlFor='FilterPriceTo' className='flex items-center gap-2'>
-                            <span className='text-sm text-gray-500'>$</span>
-
-                            <input
-                              type='number'
-                              id='FilterPriceTo'
-                              placeholder='To'
-                              className='w-full rounded-md border-gray-200 shadow-sm sm:text-sm'
-                            />
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </details>
+                  
                 </div>
+              </li>
+              <li>
+              <div className='text-center mt-4'>
+                        <button className='bg-gradient-to-b from-indigo-500  via-indigo-400 to-purple-300 text-white px-16 py-2 border rounded-3xl shadow-lg transition duration-300 ease-in-out font-medium'>Reset</button>
+                      </div>
               </li>
             </ul>
           </div>
@@ -407,7 +353,7 @@ const ProductList = (props: Props) => {
       <div className='w-4/5 p-4'>
         <div>
           <div className='flex flex-col items-center gap-4 p-6 shadow-lg sm:flex-row sm:justify-between rounded bg-gradient-to-b from-indigo-500  via-indigo-400 to-purple-300'>
-            <strong className='text-xl text-white sm:text-xl cursor-pointer'>
+            <strong className='font-bold text-white sm:text-xl cursor-pointer'>
               Explore the latest Apple products and accessories.
             </strong>
           </div>
@@ -475,14 +421,14 @@ const ProductList = (props: Props) => {
                 strokeLinejoin='round'
                 xmlns='http://www.w3.org/2000/svg'
               >
-                {/* Border */}
+              
                 <path
                   fill='none'
                   stroke='currentColor'
                   strokeWidth='2'
                   d='M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7'
                 />
-                {/* Fill */}
+           
                 <path
                   fill='currentColor'
                   d='M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7'
@@ -494,17 +440,16 @@ const ProductList = (props: Props) => {
                 <img className='object-contain h-40 w-full' src={product.thumbnail} alt={product.title} />
               </Link>
               <Link to={`/shop/${product.id}`}>
-                <h2 className='text-lg font-semibold text-indigo-700'>{product.title}</h2>
+                <h2 className='text-lg font-medium text-indigo-700'>{product.title}</h2>
               </Link>
 
               <div className='flex flex-col md:flex-row items-start md:items-center'>
-                <p className='text-red-500  md:mr-2 text-lg font-bold'>{product.price}$</p>
-                <span className='whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-sm text-green-400 font-bold'>
+                <p className='text-red-500  md:mr-2 text-lg font-medium'>{product.price}$</p>
+                <span className='whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-sm text-green-400 font-medium'>
                   {product.discountPercentage} %
                 </span>
               </div>
-              {/* <p className='text-gray-600 mb-2'>{product.rating}</p> */}
-              {/* <div className='flex'> */}
+              
               <div className='text-yellow-500'>
                 <span>&#9733;</span>
                 <span>&#9733;</span>
@@ -512,26 +457,13 @@ const ProductList = (props: Props) => {
                 <span>&#9733;</span>
                 <span>&#9733;</span>
               </div>
-              <p className='text-gray-600 mb-2 text-sm '>({product.stock} products available)</p>
-              {/* </div> */}
-              <div className='flex '>
-                <a
-                  className='group relative inline-block text-sm  font-medium  text-indigo-600 focus:outline-none focus:ring active:text-indigo-500'
-                  href='#'
-                >
-                  <span className='absolute inset-0 translate-x-0 rounded-md translate-y-0 bg-indigo-600 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5'></span>
-                  <span className='relative block border rounded-md border-current bg-white px-5 py-1'> Buy </span>
-                </a>
-                <a
-                  className='group relative inline-block ml-2 text-sm font-medium text-indigo-600 focus:outline-none focus:ring active:text-indigo-500'
-                  href='#'
-                >
-                  <span className='absolute inset-0 translate-x-0 rounded-md translate-y-0 bg-indigo-600 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5'></span>
-                  <span className='relative block border  rounded-md border-current bg-white  px-6 py-1'>
-                    Add to cart
-                  </span>
-                </a>
+              <p className='text-gray-500 mb-2 text-sm font-thin '>({product.stock} products available)</p>
+              <p className='border-t-2  border-gray-200'></p>
+              <div className='text-center mt-3'>
+              <Link to={`/shop/${product.id}`} className="font-thin hover:cursor-pointer hover:text-indigo-700  transition duration-300 ease-in-out">View details</Link>
               </div>
+              
+            
             </div>
           ))}
         </div>

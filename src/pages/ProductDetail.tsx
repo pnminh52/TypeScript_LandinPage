@@ -35,12 +35,12 @@ const ProductDetail = () => {
         <div className='grid grid-cols-2 gap-4'>
           <div>
             <img src={product?.thumbnail} alt={product?.title} className='w-60 h-auto ml-64' />
-            <div className='mt-4  grid grid-cols-3 gap-4 '>
+            {/* <div className='mt-4  grid grid-cols-3 gap-4 '>
               {product?.images &&
                 product.images.map((item, index) => (
                   <img key={index} src={item} alt='Description' className='w-full' />
                 ))}
-            </div>
+            </div> */}
           </div>
           <div className=' mt-8 mr-2'>
             <h1 className='text-sm mb-2 font-thin '>Shop / {product?.title}</h1>

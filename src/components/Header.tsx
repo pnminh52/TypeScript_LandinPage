@@ -17,7 +17,7 @@ const Header = () => {
           <nav aria-label='Global' className='hidden md:block'>
             <ul className='flex items-center gap-6 text-sm'>
               <li>
-                <NavLink to='/' className='nav-link text-gray-500 '>
+                <NavLink to='/' className='nav-link text-gray-500 hover:text-indigo-700 transition-colors duration-300'>
                   Home{' '}
                 </NavLink>
               </li>
