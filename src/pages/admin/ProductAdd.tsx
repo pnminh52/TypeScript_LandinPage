@@ -11,6 +11,7 @@ const schemaProduct = Joi.object({
   title: Joi.string().required().min(3).max(255),
   price: Joi.number().required().min(0),
   description: Joi.string().allow(null, ''),
+  oldPrice:Joi.number().allow(null, ''),
   thumbnail: Joi.string().required().min(0),
   discountPercentage: Joi.number().required().min(10).max(70),
   stock: Joi.number().required().min(10)
@@ -56,6 +57,19 @@ const ProductAdd = ({ onAdd }: Props) => {
           />
 
           {errors.thumbnail && <span className='text-red-500'>{errors.thumbnail.message}</span>}
+        </div>
+        <div className='flex flex-col'>
+          <label htmlFor='oldPrice' className='mb-1'>
+          Old Price
+          </label>
+          <input
+            type='text'
+            placeholder='oldPrice'
+            className='border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:border-blue-500'
+            {...register('oldPrice', { required: true })}
+          />
+
+          {errors.oldPrice && <span className='text-red-500'>{errors.oldPrice.message}</span>}
         </div>
 
         <div className='flex flex-col'>

@@ -6,6 +6,8 @@ import { TProduct } from '~/interfaces/Product'
 type Props = {
   category: string
 }
+
+
 const ProductList = (props: Props) => {
   console.log(props)
   const [products, setProducts] = useState<TProduct[]>([])
@@ -227,66 +229,7 @@ const ProductList = (props: Props) => {
                 </details>
               </li>
 
-              <li>
-                <a href='#' className='block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 '>
-                  Invoices
-                </a>
-                <a href='#' className='group block ml-4 '>
-                  <div className=' flex gap-1 '>
-                    <form>
-                      <fieldset>
-                        <legend className='sr-only'>Color</legend>
-                      </fieldset>
-
-                      <div className='flex flex-wrap justify-center gap-1 [&:hover_label]:opacity-75'>
-                        <div>
-                          <input type='checkbox' id='ColorS' className='sr-only' />
-
-                          <label
-                            htmlFor='ColorS'
-                            className='block size-6 cursor-pointer rounded-full bg-[#b152dd] transition hover:!opacity-100 border hover:border-gray-600'
-                          >
-                            <span className='sr-only'> Silver </span>
-                          </label>
-                        </div>
-
-                        <div>
-                          <input type='checkbox' id='ColorP' className='sr-only' />
-
-                          <label
-                            htmlFor='ColorP'
-                            className='block size-6 cursor-pointer rounded-full bg-[#cbff6a] transition  hover:!opacity-100 border hover:border-gray-600'
-                          >
-                            <span className='sr-only'> Pink </span>
-                          </label>
-                        </div>
-
-                        <div>
-                          <input type='checkbox' id='ColorG' className='sr-only' />
-
-                          <label
-                            htmlFor='ColorG'
-                            className='block size-6 cursor-pointer rounded-full bg-[#ea9dec] transition hover:!opacity-100 border hover:border-gray-600'
-                          >
-                            <span className='sr-only'> Pink </span>
-                          </label>
-                        </div>
-
-                        <div>
-                          <input type='checkbox' id='ColorSb' className='sr-only' />
-
-                          <label
-                            htmlFor='ColorSb'
-                            className='block size-6 cursor-pointer rounded-full bg-[#5795d8] transition hover:!opacity-100 border hover:border-gray-600'
-                          >
-                            <span className='sr-only'> Pink </span>
-                          </label>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </a>
-              </li>
+             
               <li>
                 <div className='space-y-2 mt-4'>
                   <details className='overflow-hidden rounded-lg border border-gray-300 [&_summary::-webkit-details-marker]:hidden'>
@@ -335,12 +278,122 @@ const ProductList = (props: Props) => {
 
                        
                       </ul>
+                      
                     </div>
                   </details>
 
                   
                 </div>
               </li>
+              <div>
+              <ul className="space-y-1 mt-4">
+  
+
+  <li>
+    <a
+      href="#"
+      className="group flex items-center transition duration-300 ease-in-out justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+    >
+      <div className="flex items-center gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="size-5 opacity-75"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth="2"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+          />
+        </svg>
+
+        <span className="text-sm font-medium"> Teams </span>
+      </div>
+
+      
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="#"
+      className="flex transition duration-300 ease-in-out items-center gap-2 rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="size-5 opacity-75"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth="2"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
+        />
+      </svg>
+
+      <span className="text-sm font-medium"> Billing </span>
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="#"
+      className="group transition duration-300 ease-in-out flex items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+    >
+      <div className="flex items-center gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="size-5 opacity-75"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth="2"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+          />
+        </svg>
+
+        <span className="text-sm font-medium"> Invoices </span>
+      </div>
+
+     
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="#"
+      className="flex transition duration-300 ease-in-out items-center gap-2 rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="size-5 opacity-75"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth="2"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+        />
+      </svg>
+
+      <span className="text-sm font-medium"> Account </span>
+    </a>
+  </li>
+</ul>
+              </div>
               <li>
               <div className='text-center mt-4'>
                         <button className='bg-gradient-to-b from-indigo-500  via-indigo-400 to-purple-300 text-white px-16 py-2 border rounded-3xl shadow-lg transition duration-300 ease-in-out font-medium'>Reset</button>
@@ -356,7 +409,9 @@ const ProductList = (props: Props) => {
             <strong className='font-bold text-white sm:text-xl cursor-pointer'>
               Explore the latest Apple products and accessories.
             </strong>
+           
           </div>
+          
 
           <div className='mt-4'>
             <div className='sm:hidden '>
@@ -442,15 +497,69 @@ const ProductList = (props: Props) => {
               <Link to={`/shop/${product.id}`}>
                 <h2 className='text-lg font-medium text-indigo-700'>{product.title}</h2>
               </Link>
+              
+             
+                  <div className=' flex items-center gap-2 mb-2 '>
+                  <p className='font-thin text-sm text-gray-500  '>Avaliable color:</p>
+                    <form>
+                      <fieldset>
+                        <legend className='sr-only'>Color</legend>
+                      </fieldset>
 
+                      <div className='flex flex-wrap justify-center gap-1 [&:hover_label]:opacity-75'>
+                        <div>
+                          <input type='checkbox' id='ColorS' className='sr-only' />
+
+                          <label
+                            htmlFor='ColorS'
+                            className='block size-5 cursor-pointer rounded-full bg-[#f1d2ff] transition hover:!opacity-100 border hover:border-gray-600'
+                          >
+                            <span className='sr-only'> Silver </span>
+                          </label>
+                        </div>
+
+                        <div>
+                          <input type='checkbox' id='ColorP' className='sr-only' />
+
+                          <label
+                            htmlFor='ColorP'
+                            className='block size-5 cursor-pointer rounded-full bg-[#d884ff] transition  hover:!opacity-100 border hover:border-gray-600'
+                          >
+                            <span className='sr-only'> Pink </span>
+                          </label>
+                        </div>
+
+                        <div>
+                          <input type='checkbox' id='ColorG' className='sr-only' />
+
+                          <label
+                            htmlFor='ColorG'
+                            className='block size-5 cursor-pointer rounded-full bg-[#bd2fff] transition hover:!opacity-100 border hover:border-gray-600'
+                          >
+                            <span className='sr-only'> Pink </span>
+                          </label>
+                        </div>
+
+                        
+                      </div>
+                    </form>
+                  </div>
+                
               <div className='flex flex-col md:flex-row items-start md:items-center'>
+              {product.oldPrice && ( 
+  <span className=' mr-2 items-center font-thin text-sm text-gray-500 line-through'>
+    {product.oldPrice}$
+  </span>
+)}
+
                 <p className='text-red-500  md:mr-2 text-lg font-medium'>{product.price}$</p>
                 <span className='whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-sm text-green-400 font-medium'>
                   {product.discountPercentage} %
                 </span>
+                
               </div>
               
-              <div className='text-yellow-500'>
+              <div className='text-yellow-300'>
                 <span>&#9733;</span>
                 <span>&#9733;</span>
                 <span>&#9733;</span>
