@@ -512,7 +512,7 @@ const ProductList = (props: Props) => {
 
                           <label
                             htmlFor='ColorS'
-                            className='block size-5 cursor-pointer rounded-full bg-[#f1d2ff] transition hover:!opacity-100 border hover:border-gray-600'
+                            className='block size-4 cursor-pointer rounded-full bg-[#f1d2ff] transition hover:!opacity-100 border hover:border-gray-600'
                           >
                             <span className='sr-only'> Silver </span>
                           </label>
@@ -523,7 +523,7 @@ const ProductList = (props: Props) => {
 
                           <label
                             htmlFor='ColorP'
-                            className='block size-5 cursor-pointer rounded-full bg-[#d884ff] transition  hover:!opacity-100 border hover:border-gray-600'
+                            className='block size-4 cursor-pointer rounded-full bg-[#d884ff] transition  hover:!opacity-100 border hover:border-gray-600'
                           >
                             <span className='sr-only'> Pink </span>
                           </label>
@@ -534,7 +534,7 @@ const ProductList = (props: Props) => {
 
                           <label
                             htmlFor='ColorG'
-                            className='block size-5 cursor-pointer rounded-full bg-[#bd2fff] transition hover:!opacity-100 border hover:border-gray-600'
+                            className='block size-4 cursor-pointer rounded-full bg-[#bd2fff] transition hover:!opacity-100 border hover:border-gray-600'
                           >
                             <span className='sr-only'> Pink </span>
                           </label>
