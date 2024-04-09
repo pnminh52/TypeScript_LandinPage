@@ -27,17 +27,21 @@ const ProductEdit = ({ onEdit }: Props) => {
   const {
     register,
     handleSubmit,
+    // reset,
     formState: { errors }
   } = useForm<TProduct>({
     resolver: joiResolver(schemaProduct)
   })
   const onSubmit: SubmitHandler<TProduct> = (data) => {
+    
     onEdit({ ...data, id })
+
   }
 
   useEffect(() => {
     ;(async () => {
       const data = await getProduct(`${id}`)
+      // setProduct(data),reset(data)
       setProduct(data)
     })()
   }, [])
