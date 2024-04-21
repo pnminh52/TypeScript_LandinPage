@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
 import instance from '~/apis'
 import { User } from '~/interfaces/User'
-// import Register from './Register'
+
 
 const userSchema = Joi.object({
   email: Joi.string().email({ tlds: false }).required(),
