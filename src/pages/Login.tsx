@@ -37,7 +37,7 @@ const Login = () => {
     <div className='mx-auto max-w-screen-xl px-64 py-4 sm:px-6 lg:px-8  '>
       <div className='mx-auto max-w-sm mt-6 border rounded-lg border-indigo-700'>
         <form onSubmit={handleSubmit(onSubmit)} className='mb-0  space-y-4 rounded-lg p-2 shadow-lg sm:p-16 lg:p-4'>
-          <h1 className='text-center text-xl font-md text-indigo-600 '>Get started today</h1>
+          <h1 className='text-center text-xl font-md text-indigo-600 '>Get started today </h1>
 
           <p className='mx-auto mt-2 max-w-md font-thin text-center text-gray-500'>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati sunt dolores deleniti inventore quaerat
