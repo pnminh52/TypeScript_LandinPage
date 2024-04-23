@@ -27,7 +27,7 @@ const ProductEdit = ({ onEdit }: Props) => {
   const {
     register,
     handleSubmit,
-    // reset,
+    //du lieu duoc tra ve form)
     formState: { errors }
   } = useForm<TProduct>({
     resolver: joiResolver(schemaProduct)
